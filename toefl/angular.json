@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "tofel": {
+    "toefl": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/tofel",
+            "outputPath": "dist/toefl",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -50,18 +50,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "tofel:build"
+            "browserTarget": "toefl:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "tofel:build:production"
+              "browserTarget": "toefl:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "tofel:build"
+            "browserTarget": "toefl:build"
           }
         },
         "test": {
@@ -95,7 +95,7 @@
         }
       }
     },
-    "tofel-e2e": {
+    "toefl-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -103,11 +103,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "tofel:serve"
+            "devServerTarget": "toefl:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "tofel:serve:production"
+              "devServerTarget": "toefl:serve:production"
             }
           }
         },
@@ -123,5 +123,5 @@
       }
     }
   },
-  "defaultProject": "tofel"
+  "defaultProject": "toefl"
 }
