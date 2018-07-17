@@ -1,0 +1,14 @@
+<body (click)="onMousemove($event)" background="../../assets/BG-article.jpg">
+
+<div  (click)="sendTranslate()">
+    <div id="infoDiv" class="tooltipDiv">{{translation}}</div>
+    <div class="button">
+      <Button  class="btn btn-primary btn-lg" (click)="lastArticle()">Last</Button>
+      <Button  class="btn btn-primary btn-lg" (click)="saveSelectedText()">Save Word</Button>
+      <Button  class="btn btn-primary btn-lg" (click)="nextArticle()">Next</Button>
+    </div>
+    <div align="center"style="width:70%; margin:0 auto;margin-bottom: 10%;">
+      <p class="articleBox" [innerHTML]="data" style="font-color:white;">Loading Article</p>
+    </div>
+</div>
+</body>

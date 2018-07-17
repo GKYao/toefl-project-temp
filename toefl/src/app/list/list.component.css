@@ -1,0 +1,42 @@
+.articleBox{
+  padding: 0 15px;
+  line-height: 1.6;
+  letter-spacing: 2px;
+  text-align: left;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 24px;
+  color:white;
+  background-color: transparent;
+}
+.tooltipDiv {
+      display: none;
+      width: 250px;
+      z-index: 101;
+      background-color: #fff;
+      border: 3px solid #666;
+      padding: 12px 12px 12px 12px;
+      border-radius: 0px 25px 0px 25px;
+    }
+
+ .button {
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 90%; /* Position the navbar at the top of the page */
+    width: 20%; /* Full width */
+}
+
+/* Links inside the navbar */
+/* .translate a {
+    margin-top: 30px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 24px;
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+} */
+.button{
+  margin: auto;
+   width: 50%;}

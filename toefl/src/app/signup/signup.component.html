@@ -1,0 +1,14 @@
+<div class="main">
+  <h1 style="color:white;">
+    New User Sign Up
+  </h1>
+<form *ngIf="box" novalidate [formGroup]="rForm" (ngSubmit)="submit_form(rForm.value)" (keyup.enter)="submit_form(rForm.value)">
+    <input matInput type="text" formControlName='username' name="username" placeholder="Username" required>
+      <hr class="between" />
+    <input matInput type="password" formControlName='password' name="password" placeholder="Password" required>
+      <hr class="between" />
+    <button type="submit" class="btn btn-primary" [disabled]="username.invalid || password.invalid">Submit</button>
+</form>
+<p class="signupReponse">{{signupReponse}}</p>
+<button *ngIf="back" (click)="goBack()">Go Back</button>
+</div>

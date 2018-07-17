@@ -1,0 +1,13 @@
+<h1 id="text">Hi {{currentUser}}!</h1>
+<Button  class="btn btn-primary"  (click)="getVocab()">Your Vocab</Button>
+<!-- <li *ngFor="let item of items">
+   {{item}}
+</li> -->
+
+ <table class="table table-bordered">
+     <thead>
+       <tr class="d-flex"*ngFor="let item of items">
+         <th id="text" class="col-3">{{item}}</th>
+       </tr>
+     </thead>
+  </table>

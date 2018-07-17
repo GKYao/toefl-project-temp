@@ -1,28 +1,36 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { ManuComponent } from './manu/manu.component';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { ListComponent } from './list/list.component';
+import {FormControl, FormGroup, Validators, ReactiveFormsModule, FormsModule, FormBuilder} from '@angular/forms';
+import { SignupComponent } from './signup/signup.component';
+import { ProfileComponent } from './profile/profile.component';
+declare var jquery:any;
+declare var $ :any;
 @NgModule({
   declarations: [
     AppComponent,
-    ManuComponent,
     HomeComponent,
-    ListComponent
-  ],
+    ListComponent,
+    SignupComponent,
+    ProfileComponent
+    ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    RouterModule.forRoot([
-        { path: '', redirectTo: '/home', pathMatch: 'full' },
-      { path: 'home', component: HomeComponent },
-      { path: 'lists', component: ListComponent }
-    ])
+    FormsModule,
+    ReactiveFormsModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  title = 'abgular 4 with jquery';
+    toggleTitle(){
+      $('.title').slideToggle(); //
+    }
+}
